@@ -1,8 +1,9 @@
 node_modules
+data/
+etc/config.json
 *log
 *bak
 *err
 *out
 *~
-etc/config.json
-data/
+
