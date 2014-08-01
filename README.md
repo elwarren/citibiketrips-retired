@@ -14,7 +14,7 @@ npm install
 
 You'll need to provide your username and password to the http://citibikenyc.com
 
-```
+```node
 var config = require('etc/config.json');
 var CitibikeTrips = require('CitibikeTrips');
 var bt = CitibikeTrips(config);
@@ -36,12 +36,14 @@ bt.getAllTrips(function(trips) {
 ```
 
 Example output:
-```
+
+```json
 {}
 ```
 
 Example config:
-```
+
+```json
 {}
 ```
 
