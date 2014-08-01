@@ -14,7 +14,7 @@
       "type": "MIT",
       "url": "https://github.com/elwarren/citibiketrips/raw/master/LICENSE"
    }],
-   "main": "CitibikeTrips.js",
+   "main": "lib/CitibikeTrips.js",
    "private": true,
    "preferGlobal": false,
    "keywords": ["citibike", "bike", "bicycle", "trip", "bike"],
