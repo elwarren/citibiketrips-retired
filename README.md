@@ -14,10 +14,22 @@ npm install
 
 You'll need to provide your username and password to the http://citibikenyc.com
 
+Example config:
+
+```json
+{
+  "debug": 0,
+  "citibikenyc": {
+    "user": "yourusername",
+    "pass": "yourpassword"
+  }
+}
+```
+
 ```node
 var config = require('etc/config.json');
 var CitibikeTrips = require('CitibikeTrips');
-var bt = CitibikeTrips(config);
+var bt = CitibikeTrips({config});
 
 bt.getLastTrip(function(trip) {
   // return single json object of most recent trip
@@ -38,17 +50,40 @@ bt.getAllTrips(function(trips) {
 Example output:
 
 ```json
-{}
+{
+  "startStationId": 212,
+  "startTimestamp": 1406850546,
+  "endStationId": 512,
+  "endTimestamp": 1406851284,
+  "durationSeconds": 738,
+  "id": 13204503,
+  "endDate": "2014-08-01T00:01:24.000Z",
+  "startDate": "2014-07-31T23:49:06.000Z",
+  "durationMins": 12,
+  "nowSecs": 3600,
+  "nowMins": 60,
+  "isOpen": false
+}
 ```
 
-Example config:
+## Thanks
 
-```json
-{}
-```
+Special thanks to the Citibike program operated by NYC Bike Share.  I ride these bikes everyday, sometimes 3-4 trips in a single day.
 
-What else can we do?
-See examples in bin directory
+Please do not abuse their servers with excessive polling.  I've read the Citibike TOS http://www.citibikenyc.com/assets/pdf/terms-of-use.pdf
+and it appears to be OK to do this for personal use.
+
+
+
+
+## See Also
+
+Example code in bin directory.
+
+My collection of tools at https://github.com/elwarren/citibiketools.git
+is available seperately to avoid updates to this package.
+
+What else could we do?
  * Tell twitter you're riding a bike!
  * Send yourself an sms txt if your trip time is approaching 45 minutes.
  * Track your personal station history.
