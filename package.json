@@ -1,0 +1,36 @@
+{
+   "version": "0.0.1",
+   "name": "CitibikeTrips",
+   "author": "Warren Lindsey <warren.lindsey+npmjs@gmail.com> (https://github.com/elwarren)",
+   "description": "get trip data from citibike website",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/elwarren/citibiketrips.git"
+   },
+   "bugs": {
+      "url": "https://github.com/elwarren/citibiketrips/issues"
+   },
+   "licenses": [{
+      "type": "MIT",
+      "url": "https://github.com/elwarren/citibiketrips/raw/master/LICENSE"
+   }],
+   "main": "CitibikeTrips.js",
+   "private": true,
+   "preferGlobal": false,
+   "keywords": ["citibike", "bike", "bicycle", "trip", "bike"],
+   "engines": {
+      "node": "~0.10.24"
+   },
+   "dependencies": {
+      "request": "*",
+      "async": ">0.8.0",
+      "cheerio": "*"
+   },
+   "devDependencies": {
+      "mocha": "*",
+      "chai": "*"
+   },
+   "scripts": {
+      "test": "node_modules/.bin/mocha test/CitibikeTrips.js"
+   }
+}

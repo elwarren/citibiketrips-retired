@@ -1,0 +1,43 @@
+$ make test
+./node_modules/.bin/mocha --reporter spec
+
+
+  CitibikeTrips
+    ✓ should initialize class without error 
+
+  #getToken()
+Thu Jul 31 2014 22:10:53 GMT-0400 (EDT) REQ 200 09e83fc06176bbc920e6019e468a18c4
+    ✓ should get session token without error (576ms)
+
+  #login()
+Thu Jul 31 2014 22:10:53 GMT-0400 (EDT) REQ 302 Login Success
+    ✓ should login without error (476ms)
+
+  #getTripPage()
+Thu Jul 31 2014 22:11:01 GMT-0400 (EDT) REQ 200 Page 1 done
+    ✓ should get trip page without error (8430ms)
+
+  #getRecentTrips()
+Thu Jul 31 2014 22:11:02 GMT-0400 (EDT) REQ 200 09e83fc06176bbc920e6019e468a18c4
+Thu Jul 31 2014 22:11:02 GMT-0400 (EDT) REQ 302 Login Success
+Thu Jul 31 2014 22:11:11 GMT-0400 (EDT) REQ 200 Page 1 done
+    ✓ should get recent trips without error (9824ms)
+
+  #getAllTrips()
+Thu Jul 31 2014 22:11:12 GMT-0400 (EDT) REQ 200 09e83fc06176bbc920e6019e468a18c4
+Thu Jul 31 2014 22:11:12 GMT-0400 (EDT) REQ 302 Login Success
+Thu Jul 31 2014 22:11:21 GMT-0400 (EDT) REQ 200 Page 1 done
+Thu Jul 31 2014 22:11:26 GMT-0400 (EDT) REQ 200 Page 2 done
+Thu Jul 31 2014 22:11:28 GMT-0400 (EDT) REQ 200 Page 3 done
+Thu Jul 31 2014 22:11:29 GMT-0400 (EDT) REQ 200 Page 4 done
+Thu Jul 31 2014 22:11:31 GMT-0400 (EDT) REQ 200 Page 5 done
+Thu Jul 31 2014 22:11:31 GMT-0400 (EDT) REQ 200 Page 6 done
+Thu Jul 31 2014 22:11:32 GMT-0400 (EDT) REQ 200 Page 7 done
+Thu Jul 31 2014 22:11:34 GMT-0400 (EDT) REQ 200 Page 8 done
+Thu Jul 31 2014 22:11:36 GMT-0400 (EDT) REQ 200 Page 9 done
+Thu Jul 31 2014 22:11:37 GMT-0400 (EDT) REQ 200 Page 10 done
+    ✓ should get all trips without error (26006ms)
+
+
+  6 passing (45s)
+
