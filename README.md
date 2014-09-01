@@ -66,6 +66,13 @@ Example output:
 }
 ```
 
+## See Also
+
+Example code in bin directory.
+
+My collection of tools at https://github.com/elwarren/citibiketools.git
+is available seperately to avoid updates to this package.
+
 ## Thanks
 
 Special thanks to the Citibike program operated by NYC Bike Share.  I ride these bikes everyday, sometimes 3-4 trips in a single day.
@@ -74,19 +81,4 @@ Please do not abuse their servers with excessive polling.  I've read the Citibik
 and it appears to be OK to do this for personal use.
 
 
-
-
-## See Also
-
-Example code in bin directory.
-
-My collection of tools at https://github.com/elwarren/citibiketools.git
-is available seperately to avoid updates to this package.
-
-What else could we do?
- * Tell twitter you're riding a bike!
- * Send yourself an sms txt if your trip time is approaching 45 minutes.
- * Track your personal station history.
- * Auto-checkin to foursquare when you checkout a bike.
- * what else?
 
