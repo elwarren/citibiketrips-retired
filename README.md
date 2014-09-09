@@ -26,6 +26,8 @@ Example config:
 }
 ```
 
+Example code:
+
 ```node
 var config = require('etc/config.json');
 var CitibikeTrips = require('CitibikeTrips');
