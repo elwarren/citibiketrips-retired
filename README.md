@@ -1,6 +1,11 @@
-# CitibikeTrips.js 
+# CitibikeTrips.js RETIRED
 
 A node.js module to scrape your personal trip data from the CitiBike website.
+
+**UPDATE: this code is retired and kept as reference.  All of this code broke when Citibike
+switched backend to motivate, resulting in completely new website html source and apis.  Perhaps
+this code is useful for another bike sharing program.  It also serves as an interesting example
+of logging into a website and maintaining session.**
 
 ## Install
 TODO this has not been released to NPM yet
